@@ -1,0 +1,8 @@
+<h1>Create a new list</h1>
+
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :image_url, as :file %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back to Lists", lists_path %>
